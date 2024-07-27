@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foody.EntityLayer", "Foody.EntityLayer\Foody.EntityLayer.csproj", "{D6ADB44A-4FD2-4539-A83D-E2A1FC5A5BEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6ADB44A-4FD2-4539-A83D-E2A1FC5A5BEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6ADB44A-4FD2-4539-A83D-E2A1FC5A5BEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6ADB44A-4FD2-4539-A83D-E2A1FC5A5BEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6ADB44A-4FD2-4539-A83D-E2A1FC5A5BEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFBBF74D-D565-487F-AD04-F895A643CEB3}
+	EndGlobalSection
+EndGlobal
