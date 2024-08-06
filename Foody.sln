@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foody.EntityLayer", "Foody.EntityLayer\Foody.EntityLayer.csproj", "{D6ADB44A-4FD2-4539-A83D-E2A1FC5A5BEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Foody.EntityLayer", "Foody.EntityLayer\Foody.EntityLayer.csproj", "{D6ADB44A-4FD2-4539-A83D-E2A1FC5A5BEF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Foody.DataAccessLayer", "Foody.DataAccessLayer\Foody.DataAccessLayer.csproj", "{887B8328-6904-43AA-B312-CF435F791897}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foody.BusinessLayer", "Foody.BusinessLayer\Foody.BusinessLayer.csproj", "{569C6B42-9461-40ED-B6DD-E5B5EBD9B9AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foody.WEBUI", "Foody.WEBUI\Foody.WEBUI.csproj", "{4F538EA0-72C7-4A29-8462-23F8B39304D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{D6ADB44A-4FD2-4539-A83D-E2A1FC5A5BEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6ADB44A-4FD2-4539-A83D-E2A1FC5A5BEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6ADB44A-4FD2-4539-A83D-E2A1FC5A5BEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{887B8328-6904-43AA-B312-CF435F791897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{887B8328-6904-43AA-B312-CF435F791897}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{887B8328-6904-43AA-B312-CF435F791897}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{887B8328-6904-43AA-B312-CF435F791897}.Release|Any CPU.Build.0 = Release|Any CPU
+		{569C6B42-9461-40ED-B6DD-E5B5EBD9B9AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{569C6B42-9461-40ED-B6DD-E5B5EBD9B9AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{569C6B42-9461-40ED-B6DD-E5B5EBD9B9AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{569C6B42-9461-40ED-B6DD-E5B5EBD9B9AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F538EA0-72C7-4A29-8462-23F8B39304D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F538EA0-72C7-4A29-8462-23F8B39304D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F538EA0-72C7-4A29-8462-23F8B39304D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F538EA0-72C7-4A29-8462-23F8B39304D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
