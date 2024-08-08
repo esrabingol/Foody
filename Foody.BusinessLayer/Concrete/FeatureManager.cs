@@ -1,4 +1,4 @@
-﻿,using Foody.BusinessLayer.Abstract;
+﻿using Foody.BusinessLayer.Abstract;
 using Foody.DataAccessLayer.Abstract;
 using Foody.EntityLayer.Concrete;
 
