@@ -15,9 +15,10 @@ namespace Foody.WEBUI.Controllers
             var values = _productService.TGetAll();
             return View(values);
         }
-        public IActionResult ProductListCategory()
+        public IActionResult ProductListWithCategory()
         {
-            return View();
+            var values = _productService.TProductListWithCategory();
+            return View(values);
         }
     }
 }
