@@ -9,9 +9,9 @@ namespace Foody.WEBUI.Controllers
     {
         private readonly IProductService _productService;
         private readonly ICategoryService _categoryService;
-        public ProductsController(IProductService productService,ICategoryService categoryService)
+        public ProductsController(IProductService productService, ICategoryService categoryService)
         {
-            _productService= productService;
+            _productService = productService;
             _categoryService = categoryService;
         }
         public IActionResult ProductList()
@@ -46,5 +46,20 @@ namespace Foody.WEBUI.Controllers
             return RedirectToAction("ProductListWithCategory");
         }
 
+        [HttpGet]
+        public IActionResult UpdateProduct(int id)
+        {
+            var values = _categoryService.TGetAll();
+            ViewBag.categories = new SelectList(values, "CategoryId", "CategoryName");
+            var productValues = _productService.TGetById(id);
+            return View(productValues);
+
+        }
+        [HttpPost]
+        public IActionResult UpdateProduct(Product product)
+        {
+            _productService.TUpdate(product);
+            return RedirectToAction("ProductListWithCategory");
+        }
     }
 }
