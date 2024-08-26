@@ -1,14 +1,18 @@
 ﻿using Foody.BusinessLayer.Abstract;
+using Foody.EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Foody.WEBUI.Controllers
 {
     public class ProductsController : Controller
     {
         private readonly IProductService _productService;
-        public ProductsController(IProductService productService)
+        private readonly ICategoryService _categoryService;
+        public ProductsController(IProductService productService,ICategoryService categoryService)
         {
             _productService= productService;
+            _categoryService = categoryService;
         }
         public IActionResult ProductList()
         {
@@ -31,7 +35,15 @@ namespace Foody.WEBUI.Controllers
         [HttpGet]
         public IActionResult CreateProduct()
         {
+            var values = _categoryService.TGetAll();
+            ViewBag.categories = new SelectList(values, "CategoryId", "CategoryName");
             return View();
+        }
+        [HttpPost]
+        public IActionResult CreateProduct(Product product)
+        {
+            _productService.TInsert(product);
+            return RedirectToAction("ProductListWithCategory");
         }
 
     }
